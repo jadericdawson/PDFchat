@@ -13,7 +13,8 @@ The application requires Python 3.6+ to run.
     - README.docx
 3. Run the following command:
 ```python
-python PDFchat.py'''
+python PDFchat.py
+'''
 
 After the initial setup, the PDFchat python file can be copied or moved to any location.
 5. Open "PDFchat.py" in a text editor and paste your OpenAI API key between the quotes in this line of the python code.
