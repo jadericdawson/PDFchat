@@ -12,7 +12,8 @@ The application requires Python 3.6+ to run.
     - requirements.txt
     - README.docx
 3. Run the following command:
-```python
+
+```
 python PDFchat.py
 '''
 
