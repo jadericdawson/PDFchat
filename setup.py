@@ -12,8 +12,8 @@ setup(
     version="1.0",
     description="A chatbot application for interacting with PDF files",
     url="https://github.com/your-github-username/PDFchat_multiPDF_18July2023",
-    author="Your Name",
-    author_email="Your Email",
+    author="Jaderic Dawson",
+    author_email="",
     classifiers=[
         "License :: OSI Approved :: Python Software Foundation License"
     ],
