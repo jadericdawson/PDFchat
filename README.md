@@ -14,7 +14,7 @@ The application requires Python 3.6+ to run.
 3. Run the following command:
 
 ```
-python PDFchat.py
+python setup.py install
 ```
 
 After the initial setup, the PDFchat python file can be copied or moved to any location.
@@ -22,7 +22,9 @@ After the initial setup, the PDFchat python file can be copied or moved to any l
 
 ## Usage
 Run the python file with GUI:
-'python PDFchat.py'
+```
+python PDFchat.py
+```
 Click the "Open PDF" button and select the PDF files you want to process. You may hold Ctrl and select multiple files. PDF files do not need to be located in the same folder as the Python script, however, reference files will be generated in the same directory as the first selected PDF.
 After processing is finished, you can start asking the document(s) questions.
 
