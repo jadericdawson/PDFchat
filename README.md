@@ -12,8 +12,14 @@ The application requires Python 3.6+ to run.
     - requirements.txt
     - README.docx
 3. Run the following command:
+<details>
+<summary>Python Code</summary>
+
+```python
+python PDFchat.py
 <button class="btn" data-clipboard-text="python PDFchat.py">Copy</button>
 
+</details>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 <script>
     new ClipboardJS('.btn');
