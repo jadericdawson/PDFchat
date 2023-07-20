@@ -1,4 +1,4 @@
-# PDFchat_multiPDF_18July2023
+# PDFchat
 By: Jaderic Dawson
 
 ## Prerequisites
@@ -7,16 +7,18 @@ The application requires Python 3.6+ to run.
 ## Installation
 1. Install Python if not already installed. Detailed instructions for installation can be found [here: Python Installation](https://python.org/installation).
 2. Place all files in the same folder.
-    - PDFchat_multiPDF_18July2023.py
+    - PDFchat.py
     - setup.py
     - requirements.txt
     - README.docx
 3. Run the following command:
+   python setup.py install
 After the initial setup, the PDFchat python file can be copied or moved to any location.
-4. Open "PDFchat_multiPDF_18July2023.py" in a text editor and paste your OpenAI API key between the quotes in this line of the python code.
+5. Open "PDFchat.py" in a text editor and paste your OpenAI API key between the quotes in this line of the python code.
 
 ## Usage
 Run the python file with GUI:
+python PDFchat_multiPDF_18July2023.py
 Click the "Open PDF" button and select the PDF files you want to process. You may hold Ctrl and select multiple files. PDF files do not need to be located in the same folder as the Python script, however, reference files will be generated in the same directory as the first selected PDF.
 After processing is finished, you can start asking the document(s) questions.
 
