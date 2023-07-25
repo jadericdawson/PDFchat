@@ -42,7 +42,7 @@ print(OPENAI_GPT_PRETRAINED_MODEL_ARCHIVE_LIST)
 
 #######################################################################################################################################
 # Set OpenAI API key
-environ["OPENAI_API_KEY"] = "" #Past OpenAI API key between quotes ""
+environ["OPENAI_API_KEY"] = "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" #Past OpenAI API key between quotes ""
 #######################################################################################################################################
 
 # Function to handle the "Open PDF" button
@@ -236,7 +236,7 @@ def process_pdfs(pdf_filenames):
     # Prepare a filename for the embeddings
     embeddings_filename = f"{all_txt_filename.replace('.txt', '')}_all_embeddings.pkl"
     db_filename = f"{all_txt_filename.replace('.txt', '')}_db.pkl"
-
+    from langchain.vectorstores import FAISS	
     # Check if db file exists, if not generate new embeddings and create db object
     if path.isfile(db_filename):
         # Load db from file if it exists

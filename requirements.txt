@@ -5,4 +5,5 @@ transformers
 Torch
 TensorFlow >= 2.0
 Flax
-openai
+faiss-cpu
+
