@@ -18,10 +18,10 @@ else:
 subprocess.call(f'{pip_command} install -r {REQUIREMENTS_FILE}', shell=True)
 
 setup(
-    name="PDFchat_multiPDF_18July2023",
+    name="PDFchat",
     version="1.0",
     description="A chatbot application for interacting with PDF files",
-    url="https://github.com/your-github-username/PDFchat_multiPDF_18July2023",
+    url="https://github.com/jadericdawson/PDFchat",
     author="Jaderic Dawson",
     author_email="",
     classifiers=[
