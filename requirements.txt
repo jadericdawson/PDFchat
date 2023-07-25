@@ -2,4 +2,6 @@ textract
 tiktoken
 langchain
 transformers
-tkinter
+PyTorch
+TensorFlow >= 2.0
+Flax
