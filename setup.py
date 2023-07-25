@@ -1,11 +1,21 @@
 from setuptools import setup, find_packages
 import subprocess
 import os
+import platform
 
 # The text of the requirements file
 REQUIREMENTS_FILE = "requirements.txt"
 
-subprocess.call(f'pip install -r {REQUIREMENTS_FILE}', shell=True)
+# Determine the pip command based on the operating system
+if platform.system() == "Windows":
+    pip_command = "pip"
+elif platform.system() == "Linux":
+    pip_command = "pip3"
+else:
+    raise OSError("Unsupported operating system.")
+
+# Install the required packages using the appropriate pip command
+subprocess.call(f'{pip_command} install -r {REQUIREMENTS_FILE}', shell=True)
 
 setup(
     name="PDFchat_multiPDF_18July2023",
