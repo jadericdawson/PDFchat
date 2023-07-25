@@ -1,17 +1,19 @@
 ﻿# PDFchat
 By: Jaderic Dawson
 
+PDFchat is a compact application designed to facilitate the import of PDF files into a ChatGPT environment. This unique feature enables users to interactively 'converse' with their documents. Ensure that all the materials you wish to reference are opened simultaneously from the same folder for the best experience.
+
 ## Prerequisites
 The application requires Python 3.6+ to run.
 
 ## Installation
 1. Install Python if not already installed. Detailed instructions for installation can be found [here: Python Installation](https://python.org/installation).
-2. Place all files in the same folder.
+2. Organize all the following files within the same directory:
     - PDFchat.py
     - setup.py
     - requirements.txt
     - README.docx
-3. Run the following command:
+3. To install the necessary packages, execute the command below:
 
 ```
 python setup.py install
@@ -25,24 +27,23 @@ Run the python file with GUI:
 ```
 python PDFchat.py
 ```
-Click the "Open PDF" button and select the PDF files you want to process. You may hold Ctrl and select multiple files. PDF files do not need to be located in the same folder as the Python script, however, reference files will be generated in the same directory as the first selected PDF.
-After processing is finished, you can start asking the document(s) questions.
+Click on the "Open PDF" button and select the PDF documents you want to convert. For multiple selections, hold Ctrl while selecting. The location of these PDF files need not coincide with the Python script's directory. However, the reference files generated will be stored in the same folder as the first selected PDF. Once the processing concludes, you're ready to ask your document(s) questions!
 
 ### Chat history
-Sometimes Chat History can interfere with querying detailed responses. Use Chat History when you want to ask a series of questions requiring memory. If you want to know information directly from the text, turn Chat history off.
+While Chat History can occasionally hamper extracting detailed responses, it is quite useful when you wish to ask a sequence of interconnected questions that require memory. For direct information retrieval from the text, disable the Chat history.
 
 ### Group answers
-Occasionally you may want to see results separately such as asking for lists or 'each' of something. Deselect "Group answers" in those cases. Alternatively, turn on "Group answers" to output results in paragraph form.
+Depending on your preference, you can choose to see the responses either in a list form or as a paragraph. Deselect "Group answers" for the former or activate "Group answers" for the latter.
 
 ### Save Chat
-If you want to save the chat history to a text file, select "Save Chat" then press the "Save" button.
+To archive your chat history as a text file, select the "Save Chat" option and then hit the "Save" button.
 
 ### Reset QA
-This button clears the chat history and resubmits the last question. Sometimes you will get a different answer if the chat history is cleared. This is similar to using "Enable Chat History."
+Clicking this button will purge the chat history and reissue the previous question. You might receive a different response upon clearing the chat history. This functionality is analogous to the "Enable Chat History" feature.
 
 ### Reset All
-Deletes all embeddings, chunks, and text files associated with the original importing of the PDF document(s). These files exist so the same PDF file or series of PDF files can be opened/closed without requiring calls to the OpenAI API, which incurs fees. Use this button if the chat bot is not behaving correctly or errors are encountered.
+Use this button to remove all embeddings, chunks, and text files linked with the initial import of the PDF document(s). These files are intended to enable reopening of the same PDF files or a sequence thereof without additional calls to the OpenAI API, which would otherwise incur fees. If the chat bot is malfunctioning or errors have been detected, "Reset All" can be useful.
 
 ### AI Creativity
-By default AI creativity is set to 1. After opening your PDFs you may slide this bar left or right to a value ranging between 0 and 2 respectively. Lower temperature values will output results more closely matching the text while higher temperature values will impart more randomness to the chat queries, avoid the extremes 0 & 2. The previous question will be automatically executed at the new temperature after releasing the slider.
+The AI creativity level is preset to 1. After loading your PDFs, you can adjust this setting between 0 and 2 using the provided slider. Lower values generate responses that adhere closely to the text, while higher values introduce more randomness into the chat queries. Avoid using the extreme values of 0 & 2. When you adjust the temperature, the prior question will be automatically resubmitted at the new temperature setting.
 
