@@ -42,7 +42,7 @@ print(OPENAI_GPT_PRETRAINED_MODEL_ARCHIVE_LIST)
 
 #######################################################################################################################################
 # Set OpenAI API key
-environ["OPENAI_API_KEY"] = "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" #Past OpenAI API key between quotes ""
+environ["OPENAI_API_KEY"] = "" #Past OpenAI API key between quotes ""
 #######################################################################################################################################
 
 # Function to handle the "Open PDF" button
