@@ -4,7 +4,15 @@ By: Jaderic Dawson
 PDFchat is a compact application designed to facilitate the import of PDF files into a ChatGPT environment. This unique feature enables users to interactively 'converse' with their documents. Ensure that all the materials you wish to reference are opened simultaneously from the same folder for the best experience.
 
 ## Prerequisites
-The application requires Python 3.6+ to run.
+The application requires Python 3.6+ to run. 
+### Windows
+Download and install the latest stable release of Python 3 from here: https://www.python.org/downloads/windows/
+
+### Linux
+Run this command in a terminal from the current directory:
+```
+sudo ./setup_from_scratch.sh
+```
 
 ## Installation
 1. Install Python if not already installed. Detailed instructions for installation can be found [here: Python Installation](https://python.org/installation).
