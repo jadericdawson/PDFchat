@@ -6,10 +6,10 @@ PDFchat is a compact application designed to facilitate the import of PDF files 
 ## Prerequisites
 The application requires Python 3.6+ to run. 
 ### Windows
-Download and install the latest stable release of Python 3 from here: https://www.python.org/downloads/windows/:
-    - Under the 'Downloads' tab select 'Windows'
-    - On the next page download 'Windows 64 bit'
-    - https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe
+1.Download and install the latest stable release of Python 3 from here: https://www.python.org/downloads/windows/
+    i.Under the 'Downloads' tab select 'Windows'
+    ii.On the next page download 'Windows 64 bit'
+    iii.https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe
 Download and install 'git': https://git-scm.com/download/win <br />
 -- or -- <br />
 Download and extract PDFchat.zip directly from Github.  <br />
