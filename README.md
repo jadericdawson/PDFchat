@@ -20,7 +20,8 @@ https://github.com/jadericdawson/PDFchat <br />
 ### Linux
 Run this command in a terminal from the current directory:
 ```
-sudo ./setup_from_scratch.sh
+sudo chmod +x setup_env.sh
+sudo ./setup_env.sh
 ```
 
 2. Organize all the following files within the same directory:
