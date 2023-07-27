@@ -5,6 +5,10 @@ PDFchat is a compact application designed to facilitate the import of PDF files 
 
 ## Prerequisites
 The application requires Python 3.6+ to run. 
+
+## Installation
+1. Install Python if not already installed. Detailed instructions for installation can be found [here: Python Installation](https://python.org/installation) or run the installation scripts below.
+
 ### Windows
 Download and extract PDFchat.zip directly from Github.  <br />
 https://github.com/jadericdawson/PDFchat <br />
@@ -17,15 +21,13 @@ Run this command in a terminal from the current directory:
 ```
 sudo ./setup_from_scratch.sh
 ```
-
-## Installation
-1. Install Python if not already installed. Detailed instructions for installation can be found [here: Python Installation](https://python.org/installation).
 2. Organize all the following files within the same directory:
     - PDFchat.py
     - setup.py
     - requirements.txt
     - README.docx
-3. To install the necessary packages, execute the command below:
+      
+3. If you already have Python installed on your system, install the necessary packages, execute the command below:
 
 ```
 python setup.py install
