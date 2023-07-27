@@ -1,31 +1,30 @@
 #!/bin/bash
 
-# Name of the virtual environment
-VENV_NAME="pdfchat_venv"
+# Define Python version and Installation directory
+PYTHON_VERSION=3.11.4
+PYTHON_INSTALLER=python-${PYTHON_VERSION}-amd64.exe
+PYTHON_PATH=/opt/python${PYTHON_VERSION}
 
-# Check if the virtual environment already exists
-if [ ! -d "$VENV_NAME" ]; then
-    # Create a new virtual environment
-    python3 -m venv $VENV_NAME
+# Download the Python installer if it doesn't exist
+if [ ! -f "${PYTHON_INSTALLER}" ]; then
+    echo "Downloading Python ${PYTHON_VERSION} installer..."
+    wget https://www.python.org/ftp/python/${PYTHON_VERSION}/${PYTHON_INSTALLER}
 fi
 
-# Activate the virtual environment
-source $VENV_NAME/bin/activate
+# Install Python (and pip, which is included in the installer)
+echo "Installing Python ${PYTHON_VERSION}..."
+chmod +x ${PYTHON_INSTALLER}
+./${PYTHON_INSTALLER} --prefix=${PYTHON_PATH} --silent --include-pip
 
-# Install dependencies from requirements.txt
-pip3 install -r requirements.txt
+# Update PATH to include the new Python installation
+echo "Updating PATH..."
+export PATH="${PYTHON_PATH}/bin:${PATH}"
 
-# Install openai package
-pip3 install openai
+# Python and pip are now installed and added to PATH. 
+# Use pip to install the script's dependencies
+echo "Installing Python libraries..."
+pip install textract tiktoken transformers langchain torch tensorflow
 
-# Install langchain package
-pip3 install langchain
-
-# Run setup.py to install your package
-python3 setup.py install
-
-python3 PDFchat.py
-
-# Keep the virtual environment active after the script finishes
-exec bash
-
+# Run your Python script
+echo "Running your script..."
+python PDFchat.py
