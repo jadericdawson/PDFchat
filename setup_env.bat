@@ -15,6 +15,12 @@ REM Install Python (and pip, which is included in the installer)
 echo Installing Python %PYTHON_VERSION%...
 start /wait %PYTHON_INSTALLER% /quiet InstallAllUsers=1 PrependPath=1 Include_test=0 TargetDir=%PYTHON_PATH%
 
+REM Download and install Microsoft Visual C++ Redistributable
+echo Downloading Microsoft Visual C++ Redistributable...
+powershell -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; Invoke-WebRequest https://aka.ms/vs/16/release/vc_redist.x64.exe -OutFile vc_redist.x64.exe"
+echo Installing Microsoft Visual C++ Redistributable...
+start /wait vc_redist.x64.exe /install /quiet /norestart
+
 REM Temporary add Python and Python Scripts to the PATH. 
 SET "PATH=%PYTHON_PATH%;%PYTHON_PATH%\Scripts;%PATH%"
 
@@ -22,10 +28,7 @@ REM Python and pip are now installed and added to PATH.
 REM Use pip to install the script's dependencies
 
 echo Installing Python libraries...
-pip install textract tiktoken transformers langchain torch tensorflow flax
-python.exe -m pip install --upgrade pip
-pip install --upgrade jax jaxlib
-pip install --upgrade transformers
+pip install textract tiktoken transformers langchain torch tensorflow
 
 REM Run your Python script
 echo Running your script...
