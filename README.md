@@ -1,7 +1,7 @@
 ﻿# PDFchat
 By: Jaderic Dawson
 
-**Requires OpenAI API**
+**"**Requires OpenAI API**"**
 
 PDFchat is a compact application designed to facilitate the import of PDF files into a ChatGPT environment. This unique feature enables users to interactively 'converse' with their documents. Ensure that all the materials you wish to reference are opened simultaneously from the same folder for the best experience.
 
