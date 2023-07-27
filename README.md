@@ -16,6 +16,7 @@ https://github.com/jadericdawson/PDFchat <br />
 - Once downloaded, run "setup_env.bat" <br />
 - A warning dialog will appear because you're running a .bat file, run anyway.
 - The batch file will check your system and install python, c++, and required dependencies as needed.
+- **After Python and dependencies have been installed, windows users may double click the PDFchat.py file directly to run new instances of the app.**
 
 ### Linux
 Run this command in a terminal from the current directory:
