@@ -302,6 +302,7 @@ def ask_question(question):
 
     if question.lower() == "exit":
         root.destroy()
+        return
 
     if not enable_chat_history:
         chat_history.clear()  # Clear the chat history
