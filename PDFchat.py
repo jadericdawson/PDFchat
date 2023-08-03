@@ -277,12 +277,17 @@ def process_pdfs(pdf_filenames):
     question_entry.focus_set()
 
 def enter_pressed(event=None):
+    # Get the question from the entry widget
+    question = question_entry.get()
+
+    # If the question is "exit", destroy the root window and return
+    if question.lower() == "exit":
+        root.destroy()
+        return
+
     # Update the chatbox
     chatbox.insert(tk.END, "...\n\n")
     chatbox.update_idletasks()  # Forces the chatbox to update
-
-    # Get the question from the entry widget
-    question = question_entry.get()
 
     # Call ask_question with the question argument
     ask_question(question)
