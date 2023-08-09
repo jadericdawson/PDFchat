@@ -24,7 +24,7 @@ export PATH="${PYTHON_PATH}/bin:${PATH}"
 # Python and pip are now installed and added to PATH. 
 # Use pip to install the script's dependencies
 echo "Installing Python libraries..."
-pip install textract tiktoken transformers langchain torch tensorflow python3-tk
+pip install textract tiktoken transformers langchain torch tensorflow python3-tk openai
 
 # Run your Python script
 echo "Running your script..."
