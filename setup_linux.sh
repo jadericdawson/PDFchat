@@ -1,4 +1,5 @@
 #!/bin/bash
+### may need to check if pip is installed
 
 # Define Python version and Installation directory
 PYTHON_VERSION=3.11.4
